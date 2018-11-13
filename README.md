@@ -2,6 +2,13 @@
 
 Calculates linear correlation between data ranges
 
+## Command-line options
+
+``corr-calc [DATA_FILE] [-o|--output OUTPUT_FILE]``
+
+* ``DATA_FILE`` default is "data.csv"
+* ``OUTPUT_FILE`` defauilt is "results.csv"
+
 ## Input format
 
 CSV-file with each data-range as a row of the form:
