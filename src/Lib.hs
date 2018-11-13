@@ -1,6 +1,6 @@
 module Lib
     (
-    calculateCorrelations
+      calculateCorrelations
     ) where
 
 import Control.Monad (mzero)
@@ -24,7 +24,7 @@ instance ToNamedRecord CorrRec where
     toNamedRecord (CorrRec n1 n2 c) = namedRecord ["Range X" .= strip n1, "Range Y" .= strip n2, "Correlation(X,Y)" .= c]
 
 instance DefaultOrdered CorrRec where
-    headerOrder _ = header ["Range X", "Range X", "Correlation(X,Y)"]
+    headerOrder _ = header ["Range X", "Range Y", "Correlation(X,Y)"]
 
 trimData :: DataRec -> DataRec -> (DataRec, DataRec)
 trimData (DataRec c1 n1 xs) (DataRec c2 n2 ys) = (DataRec c1 n1 (take l xs), DataRec c2 n2 (take l ys))
