@@ -1,4 +1,4 @@
-# Correlations calculatior
+# Correlations calculator
 
 Calculates linear correlation between data ranges
 
@@ -6,8 +6,8 @@ Calculates linear correlation between data ranges
 
 ``corr-calc [DATA_FILE] [-o|--output OUTPUT_FILE]``
 
-* ``DATA_FILE`` default is "data.csv"
-* ``OUTPUT_FILE`` defauilt is "results.csv"
+* ``DATA_FILE`` -- input file. Default is "data.csv"
+* ``OUTPUT_FILE`` -- output file. Defauilt is "results.csv"
 
 ## Input format
 
@@ -15,13 +15,14 @@ CSV-file with each data-range as a row of the form:
 
 ``%control-code%, %range-name%, %comma-separated doubles%``
 
-Ranges can have different sizes. In that case the longer one is truncated.
+Ranges can have different sizes. In that case before calculating correlation between two ranges the longer one is truncated.
 
 ### Example:
 
 ```
-0, range 1, 1.0, 2.5, 3, 4
-1, range 2, 1,2,3
+0, Range 1, 1.0, 2.5, 3, 4
+1, Range 2, 1,2,3
+2, Range 3, 0,9,8,7,6,5,4
 ```
 
 ## Control code
