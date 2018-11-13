@@ -1,0 +1,57 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 01bae458f527ffc6677c2b79abc5e17426334617ff5a00c2e6123bded1cb1a46
+
+name:           corr-calc
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/lemarwin/coor-calc#readme>
+homepage:       https://github.com/lemarwin/svcorr#readme
+bug-reports:    https://github.com/lemarwin/svcorr/issues
+author:         LeMarwin
+maintainer:     lemarwin42@gmail.com
+copyright:      2018 Author name here
+license:        BSD3
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/lemarwin/svcorr
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_corr_calc
+  hs-source-dirs:
+      src
+  default-extensions: OverloadedStrings
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , cassava
+    , optparse-applicative
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable corr-calc
+  main-is: Main.hs
+  other-modules:
+      Paths_corr_calc
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , cassava
+    , corr-calc
+    , optparse-applicative
+    , text
+    , vector
+  default-language: Haskell2010
