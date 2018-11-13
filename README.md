@@ -19,7 +19,7 @@ Ranges can have different sizes. In that case the longer one is truncated.
 
 ## Control code
 
-corr-calc calculates correlations between rows using the following rule:
+``corr-calc`` calculates correlations between rows using the following rule:
 
 Calculate correlation between "Range 1" and "Range 2" iff control-code of "Range 1" is less than that of "Range 2"
 
